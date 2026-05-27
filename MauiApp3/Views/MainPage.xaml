@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:page="clr-namespace:MauiApp3.ViewModel"
+    x:DataType="page:MainViewModel"
+    x:Class="MauiApp3.MainPage">
+
+    <VerticalStackLayout
+        Padding="20"
+        RadioButtonGroup.GroupName="colorsBottomSheet"
+        RadioButtonGroup.SelectedValue="{Binding RadioValue}">
+        <Label
+            FontSize="30"
+            Margin="0,0,0,24"
+            Text="Radio Buttons"
+            TextColor="Purple"
+            HorizontalOptions="Center" />
+
+        <Label
+            Text="What's your favorite color?" />
+        
+        <RadioButton
+            Content="Red" 
+            Value="Red"/>
+        
+        <RadioButton
+            Content="Green"
+            Value="Green" />
+        
+        <RadioButton
+            Content="Blue"
+            Value="Blue" />
+        
+        <RadioButton
+            Content="Other"
+            Value="Other" />
+
+        <Label
+            Text="Selected value:" />
+        
+        <Label
+            Margin="0,0,0,16"
+            Text="{Binding RadioValue}" />
+
+        <Button 
+            Text="Open bottomsheet"
+            Command="{Binding OpenBottomSheetCommand}"/>
+    </VerticalStackLayout>
+</ContentPage>
