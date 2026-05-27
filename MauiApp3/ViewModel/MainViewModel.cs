@@ -2,7 +2,6 @@
 using CommunityToolkit.Mvvm.Input;
 using MauiApp3.Views;
 using Plugin.Maui.BottomSheet.Navigation;
-using System.Xml.Linq;
 
 namespace MauiApp3.ViewModel
 {
